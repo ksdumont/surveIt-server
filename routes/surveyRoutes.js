@@ -20,8 +20,9 @@ module.exports = app => {
       _user: req.user.id,
       dateSent: Date.now()
     });
-
+ 
     const mailer = new Mailer(survey, surveyTemplate(survey));
+
     mailer.send();
   });
 };
