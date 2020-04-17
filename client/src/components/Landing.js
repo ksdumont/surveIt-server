@@ -6,7 +6,7 @@ const Landing = () => {
       <h1>SurveIt!</h1>
       <h3>Collect feedback from your users</h3>
       <img
-        src="./surveyImage.jpg"
+        src="/surveyImage.jpg"
         alt="survey"
         style={{ width: "70%", margin: "0 auto"}}
       />
