@@ -3,12 +3,12 @@ import React from "react";
 const Landing = () => {
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>SurveIt!</h1>
-      <h3>Collect feedback from your users</h3>
+      <h2 className="teal-text">SurveIt</h2>
+      <h4 className="teal-text">Collect feedback from your users</h4>
       <img
         src="/surveyImage.jpg"
         alt="survey"
-        style={{ width: "70%", margin: "0 auto"}}
+        style={{ width: "70%", margin: "0 auto" }}
       />
     </div>
   );
