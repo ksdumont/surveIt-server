@@ -6,7 +6,7 @@ Welcome to SurveIt. Collect Feedback from your users!
 
 ### Click [here](https://surveit.herokuapp.com/) to get started.
 
-Search local artists in your city. Contact artist directly. Register as an artist to build your profile, set your rate, and land your first gig!
+Send mass emails to a big list of users for the purpose of collecting feedback.
 
 #### Technologies Used
 * HTML
@@ -14,50 +14,29 @@ Search local artists in your city. Contact artist directly. Register as an artis
 * Javascript
 * React
 * Node
-* Postgresql
-* Knex
+* Express
+* MongoDB
+* Stripe API
+* Google Oauth Authentication
+* Passport Authentication
+* SendGrid API
 
 
 ## URL
   
-  https://quiet-eyrie-75922.herokuapp.com
+  https://surveit.herokuapp.com/
 
-## METHOD
+## Routes
   
-   GET | POST | DELETE | PATCH
-
-## Show all artists
-  * GET /api/artists
-
-## Add a new artist
-  * POST /api/artists
-  ```
-  {
-  name: "", 
-  email: "", 
-  username: "", 
-  password: ""
-  }
-  ```
-  ## Delete an artist
-  * DELETE /api/artists/:artist_id
+  * /auth/google
+  * /auth/google/callback
+  * /api/logout
+  * /api/current_user
+  * /api/stripe
+  * /api/surveys
+  * /api/surveys/:surveyId/:choice
+  * /api/surveys/webhooks
   
-  ## Update an artists profile
-  * PATCH /api/artists/:artist_id
-  ```
-  {
-  image: "",
-  bio: "",
-  website: "",
-  music: "",
-  video: "",
-  rate: "",
-  location: "",
-  travel: Boolean,
-  contact: ""
-  }
-  ```
-
  ## Success Response
    
    * Code: 200
